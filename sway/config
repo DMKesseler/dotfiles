@@ -19,5 +19,7 @@ bar {
 
 # Monitor configurations
 output Virtual-1 {
-	mode 2560x1600@59.987Hz
+	mode 1920x1080@60Hz
 }
+
+output "*" bg ~/dotfiles/assets/background-minimalist-nature.jpg fill
