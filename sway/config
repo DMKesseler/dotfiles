@@ -1,0 +1,23 @@
+# Set terminal and application menu
+set $term foot 
+set $menu wofi --show drun
+
+# mod key (windows key)
+set $mod Mod4
+
+# Basic keybinds
+bindsym $mod+Return exec $term
+bindsym $mod+BackSpace exec $menu
+bindsym $mod+Shift+E exit
+
+
+# Bar configuration
+bar {
+	status_command waybar
+	position top
+}
+
+# Monitor configurations
+output Virtual-1 {
+	mode 2560x1600@59.987Hz
+}
